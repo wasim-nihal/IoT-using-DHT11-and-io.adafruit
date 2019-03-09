@@ -17,19 +17,18 @@ Step 2: Click on 'Welcome Dashboard'
         
 
 Step 3: Make the connections as follows
-
+   
+       
+ i.    Connect the Vcc pin if the DHT 11 sensor to Vin(5V) pin  and Gnd pin of DHT 11 to the Gnd pin of your Node MCU Board. 
        
        
-         i.    Connect the Vcc pin if the DHT 11 sensor to Vin(5V) pin  and Gnd pin of DHT 11 to the Gnd pin of your Node MCU Board. 
-       
-       
-        ii.    Now connect the Data Pin of the DHT 11 Sensor to pin D2 of the Node MCU Board.
+ ii.   Now connect the Data Pin of the DHT 11 Sensor to pin D2 of the Node MCU Board.
         
         
-        iii.   Finally connect the micro USB cable to your Node MCU from PC.
+ iii.  Finally connect the micro USB cable to your Node MCU from PC.
         
         
-        iv.    That's all the connection part!!!!
+ iv.   That's all the connection part!!!!
 
 
 Step 4: Open the Arduino IDE and paste the given code.
