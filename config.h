@@ -1,10 +1,10 @@
 
-#define IO_USERNAME    "wasimnihal"
-#define IO_KEY         "6f6d5e63f4bf4a04babf021b51d4d7da"
+#define IO_USERNAME    "YOUR_USER_NAME"
+#define IO_KEY         "YOUR_ACTIVE_KEY"
 
 
-#define WIFI_SSID       "Private Network"
-#define WIFI_PASS       "mynameissyedwasimnihalandiusele2phone"
+#define WIFI_SSID       "YOUR_WIFI_NETWORK_NAME"
+#define WIFI_PASS       "YOUR_WIFI_PASSWORD"
 
 
 #include "AdafruitIO_WiFi.h"
