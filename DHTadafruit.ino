@@ -11,19 +11,13 @@ AdafruitIO_Feed *temp = io.feed("temp");
 AdafruitIO_Feed *humid = io.feed("humid");
 
 void setup() {
-
   // start the serial connection
   Serial.begin(115200);
-  
-
   // wait for serial monitor to open
   while(! Serial);
-
   Serial.print("Connecting to Adafruit IO");
-
   // connect to io.adafruit.com
   io.connect();
-
   // wait for a connection
   while(io.status() < AIO_CONNECTED) {
     Serial.print(".");
@@ -33,7 +27,6 @@ void setup() {
   // we are connected
   Serial.println();
   Serial.println(io.statusText());
-
   dht.begin();
   Serial.println("DHTxx Unified Sensor Example");
   // Print temperature sensor details.
@@ -61,12 +54,9 @@ void setup() {
   Serial.println("------------------------------------");
   // Set delay between sensor readings based on sensor details.
   delayMS = sensor.min_delay / 1000;
-
 }
 
 void loop() {
-
-  
   io.run(); delay(delayMS);
   // Get temperature event and print its value.
   sensors_event_t event;  
@@ -93,9 +83,7 @@ void loop() {
     Serial.println("%");
     humid->save(y);
   }
-
   delay(3000);
-
 }
 
 
